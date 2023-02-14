@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+    <title>Todo List App By Ashish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="icon" href="./assets/images/todo-list-icon.svg">
+  </head>
+  <body>
+
+    <h1>Todo List App</h1>
+    <div id="container">
+      <input placeholder="Add a task" class="add-task" id="add" data-helloWord="asdasdas"/>
+      <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
+      <ul id="list">
+        <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <img src="bin.svg" class="delete" data-id="12" />
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- <script src="./src/todo.js"></script> -->
+
+    <script src="./src/todoModule.js"></script>
+    <script type="text/javascript">
+      TodoListApp.initialize();
+    </script>
+
+  </body>
+</html>
