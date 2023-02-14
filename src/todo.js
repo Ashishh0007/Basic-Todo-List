@@ -1,4 +1,4 @@
-( function () {
+(function () {
 
     let tasks = [];
     const taskList = document.getElementById('list');
@@ -25,7 +25,7 @@
         li.innerHTML = `
             <input type="checkbox" id="${task.id}" ${task.completed ? 'checked' : ''} class="custom-checkbox">
             <label for="${task.id}">${task.title}</label>
-            <img src="garbage-bin.svg" class="delete" data-id="${task.id}" />
+            <img src="./assets/images/garbage-bin3.svg" class="delete" data-id="${task.id}" />
         `;
 
         taskList.append(li);
@@ -44,7 +44,7 @@
     function toggleTask (taskId) {
         console.log(taskId);
         const task = tasks.filter( task => {
-            return task.id === Number(taskId);
+            return task.id == Number(taskId);
         });
 
         if(task.length > 0) {
@@ -61,7 +61,7 @@
 
     function deleteTask (taskId) {
         const newTasks = tasks.filter( task => {
-            return task.id !== Number(taskId);
+            return task.id != Number(taskId);
         })
 
         tasks = newTasks;
@@ -118,8 +118,9 @@
             }
 
             const task = {
-                title: text,
+                userId: 1,
                 id: Date.now().toString(),
+                title: text,
                 completed: false
             }
 
