@@ -1,5 +1,7 @@
 # Todo-List-App
 
+![TODO_screenshot](https://user-images.githubusercontent.com/105703743/218807208-6e66367a-72ac-4c04-8d94-5b54b06eb068.png)
+
 A todo list app
 
 ### General steps to follow when creating a project
