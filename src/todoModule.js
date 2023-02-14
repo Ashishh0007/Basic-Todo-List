@@ -44,7 +44,7 @@ var TodoListApp = ( function () {
     function toggleTask (taskId) {
         console.log(taskId);
         const task = tasks.filter( task => {
-            return task.id === Number(taskId);
+            return task.id == Number(taskId);
         });
 
         if(task.length > 0) {
@@ -61,7 +61,7 @@ var TodoListApp = ( function () {
 
     function deleteTask (taskId) {
         const newTasks = tasks.filter( task => {
-            return task.id !== Number(taskId);
+            return task.id != Number(taskId);
         })
 
         tasks = newTasks;
@@ -118,8 +118,9 @@ var TodoListApp = ( function () {
             }
 
             const task = {
-                title: text,
+                userId: 1,
                 id: Date.now().toString(),
+                title: text,
                 completed: false
             }
 
